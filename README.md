@@ -3,7 +3,7 @@
 Riftlib is a fork of [Flatangle's Flatlib](https://github.com/flatangle/flatlib) python library for Traditional Astrology. Much gratitude goes to João Ventura for laying the difficult groundwork from which I've built.
 
 ```python
->>> date = Datetime('2015/03/13', '17:00', '+00:00')
+>>> date = Datetime('2015-03-13', '17:00', '+00:00')
 >>> pos = GeoPos('38n32', '8w54')
 >>> chart = Chart(date, pos)
 
