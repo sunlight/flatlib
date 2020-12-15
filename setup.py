@@ -11,7 +11,7 @@ from setuptools import find_packages
 setup(
     # Project
     name = 'riftlib',
-    version = '0.3.0-dev',
+    version = '0.3.1-dev',
 
     # Sources
     packages = find_packages(),

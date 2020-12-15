@@ -25,4 +25,8 @@ venv/
 # Build
 build/
 
+# PyPI Package
+dist/
+
+# Local development
 riftlib.egg-info/

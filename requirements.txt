@@ -1,1 +1,5 @@
 pyswisseph==2.00.00-2
+python-dateutil==2.8.1
+pytz==2020.4
+timezonefinder==4.2.0
+backports-datetime-fromisoformat==1.0.0
