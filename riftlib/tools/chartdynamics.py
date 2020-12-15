@@ -8,9 +8,9 @@
   
 """
 
-from flatlib import const
-from flatlib import aspects
-from flatlib.dignities import essential
+from riftlib import const
+from riftlib import aspects
+from riftlib.dignities import essential
 
 
 

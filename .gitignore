@@ -25,4 +25,4 @@ venv/
 # Build
 build/
 
-flatlib.egg-info/
+riftlib.egg-info/

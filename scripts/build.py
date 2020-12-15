@@ -40,7 +40,7 @@ RES_DST_DIR = os.path.join(BUILD_DIR, 'resources')
 shutil.move(RES_SRC_DIR, RES_DST_DIR)
 
 # Create zip file
-import flatlib
+import riftlib
 
 VERSION = flatlib.__version__
 zipname = '%s-%s' % (PKG_NAME, VERSION)

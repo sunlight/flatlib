@@ -8,9 +8,9 @@
   
 """
 
-from flatlib import const
-from flatlib.object import GenericObject
-from flatlib.dignities import essential
+from riftlib import const
+from riftlib.object import GenericObject
+from riftlib.dignities import essential
 
 
 # Define arabic parts

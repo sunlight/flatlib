@@ -9,9 +9,9 @@
     
 """
 
-from flatlib import const
-from flatlib.ephem import ephem
-from flatlib.chart import Chart
+from riftlib import const
+from riftlib.ephem import ephem
+from riftlib.chart import Chart
 
 
 

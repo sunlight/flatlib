@@ -12,8 +12,8 @@
 """
 
 import swisseph
-from flatlib import angle
-from flatlib import const
+from riftlib import angle
+from riftlib import const
 
 
 # Map objects

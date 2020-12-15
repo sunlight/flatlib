@@ -7,11 +7,11 @@
 
 """
 
-from flatlib import const
-from flatlib.chart import Chart
-from flatlib.datetime import Datetime
-from flatlib.geopos import GeoPos
-from flatlib.tools.chartdynamics import ChartDynamics
+from riftlib import const
+from riftlib.chart import Chart
+from riftlib.datetime import Datetime
+from riftlib.geopos import GeoPos
+from riftlib.tools.chartdynamics import ChartDynamics
 
 
 # Build a chart for a date and location

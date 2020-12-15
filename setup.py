@@ -10,31 +10,31 @@ from setuptools import find_packages
 
 setup(
     # Project
-    name = 'flatlib',
-    version = '0.2.2-dev',
-    
+    name = 'riftlib',
+    version = '0.3.0-dev',
+
     # Sources
     packages = find_packages(),
     package_data = {
-        'flatlib': [
+        'riftlib': [
             'resources/README.md',
             'resources/swefiles/*'
         ],
     },
-    
+
     # Dependencies
     install_requires = ['pyswisseph==2.00.00-2'],
-    
+
     # Metadata
-    description = 'Python library for Traditional Astrology',
-    url = 'https://github.com/flatangle/flatlib',
+    description = 'Fork of Flatlib, a Python library for Traditional Astrology',
+    url = 'https://github.com/theriftlab/riftlib',
     keywords = ['Astrology', 'Traditional Astrology'],
     license = 'MIT',
-    
+
     # Authoring
-    author = 'João Ventura',
-    author_email = 'flatangleweb@gmail.com',
-    
+    author = 'Robert Davies',
+    author_email = 'robert@theriftlab.com',
+
     # Classifiers
     classifiers = [
         'Programming Language :: Python :: 3',
@@ -45,5 +45,5 @@ setup(
         'Intended Audience :: Developers',
         'Intended Audience :: Science/Research',
         'Topic :: Software Development :: Libraries :: Python Modules',
-    ], 
+    ],
 )

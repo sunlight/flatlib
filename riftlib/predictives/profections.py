@@ -9,8 +9,8 @@
 """
 
 import math
-from flatlib import const
-from flatlib.ephem import ephem
+from riftlib import const
+from riftlib.ephem import ephem
 
 
 def compute(chart, date, fixedObjects=False):

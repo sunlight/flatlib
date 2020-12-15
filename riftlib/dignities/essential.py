@@ -12,7 +12,7 @@
 """
 
 from . import tables
-from flatlib import const
+from riftlib import const
 
 
 # Face variants

@@ -13,10 +13,10 @@
     
 """
 
-from flatlib import const, dignities
-from flatlib import aspects
-from flatlib import props
-from flatlib.dignities import essential
+from riftlib import const, dignities
+from riftlib import aspects
+from riftlib import props
+from riftlib.dignities import essential
 
 
 # Temperament factors

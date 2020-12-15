@@ -65,7 +65,7 @@ Testing the installation
 Start the python3 interactive interpreter (``python3`` on Linux and Mac, and ``py`` on Windows) and execute the 
 following::
 
-   >>> import flatlib
+   >>> import riftlib
    >>> flatlib
    <module 'flatlib' from '/usr/local/lib/python3.4/dist-packages/flatlib/__init__.py'>
    

@@ -7,9 +7,9 @@
 
 """
 
-from flatlib.datetime import Datetime
-from flatlib.geopos import GeoPos
-from flatlib.tools import planetarytime
+from riftlib.datetime import Datetime
+from riftlib.geopos import GeoPos
+from riftlib.tools import planetarytime
 
 
 # Build a date and location

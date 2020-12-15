@@ -15,8 +15,8 @@
 
 """
 
-from flatlib.datetime import Datetime
-from flatlib.ephem import ephem
+from riftlib.datetime import Datetime
+from riftlib.ephem import ephem
 
 
 def plot(hdiff, title):

@@ -9,9 +9,9 @@
     
 """
 
-from flatlib import const
-from flatlib.tools import planetarytime
-from flatlib.dignities import essential
+from riftlib import const
+from riftlib.tools import planetarytime
+from riftlib.dignities import essential
 
 
 # House scores

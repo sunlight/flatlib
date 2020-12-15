@@ -14,8 +14,8 @@
 
 from . import swe
 from . import tools
-from flatlib import angle
-from flatlib import const
+from riftlib import angle
+from riftlib import const
 
 
 # === Objects === #

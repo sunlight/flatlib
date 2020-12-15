@@ -11,12 +11,12 @@
 
 from copy import copy
 
-from flatlib import angle, dignities
-from flatlib import const
-from flatlib import props
-from flatlib import aspects
-from flatlib.dignities import essential
-from flatlib.tools.chartdynamics import ChartDynamics
+from riftlib import angle, dignities
+from riftlib import const
+from riftlib import props
+from riftlib import aspects
+from riftlib.dignities import essential
+from riftlib.tools.chartdynamics import ChartDynamics
 
 
 # Relations with Sun

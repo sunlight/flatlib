@@ -11,9 +11,9 @@ Specifically, you will learn how to access:
 
 Let's start by creating a new chart::
 
-   >>> from flatlib.datetime import Datetime
-   >>> from flatlib.geopos import GeoPos
-   >>> from flatlib.chart import Chart
+   >>> from riftlib.datetime import Datetime
+   >>> from riftlib.geopos import GeoPos
+   >>> from riftlib.chart import Chart
    
    >>> date = Datetime('2015/03/13', '17:00', '+00:00')
    >>> pos = GeoPos('38n32', '8w54')

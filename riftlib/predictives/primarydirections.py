@@ -14,10 +14,10 @@
     
 """
 
-from flatlib import angle
-from flatlib import utils
-from flatlib import const
-from flatlib.dignities import tables
+from riftlib import angle
+from riftlib import utils
+from riftlib import const
+from riftlib.dignities import tables
 
 
 # === Base functions === #

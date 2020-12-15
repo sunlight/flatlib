@@ -16,10 +16,10 @@
 from . import eph
 from . import swe
 
-from flatlib.datetime import Datetime
-from flatlib.object import (GenericObject, Object, 
+from riftlib.datetime import Datetime
+from riftlib.object import (GenericObject, Object, 
                             House, FixedStar)
-from flatlib.lists import (GenericList, ObjectList, 
+from riftlib.lists import (GenericList, ObjectList, 
                            HouseList, FixedStarList)
 
 

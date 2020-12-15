@@ -9,9 +9,9 @@
 """
 
 from . import swe
-from flatlib import angle
-from flatlib import const
-from flatlib import utils
+from riftlib import angle
+from riftlib import const
+from riftlib import utils
 
 
 # One arc-second error for iterative algorithms

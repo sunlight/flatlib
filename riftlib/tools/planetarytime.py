@@ -13,9 +13,9 @@
   
 """
 
-from flatlib import const
-from flatlib.ephem import ephem
-from flatlib.datetime import Datetime
+from riftlib import const
+from riftlib.ephem import ephem
+from riftlib.datetime import Datetime
 
 
 # Planetary rulers starting at Sunday
