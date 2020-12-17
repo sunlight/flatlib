@@ -174,7 +174,7 @@ class Datetime:
     GREGORIAN = GREGORIAN
     JULIAN = JULIAN
 
-    def __init__(self, date, time=0, utcoffset=0, calendar=GREGORIAN, pos=0):
+    def __init__(self, date, time=0, utcoffset=0, calendar=GREGORIAN, pos=None):
         # Prepare the variables
         if isinstance(date, Date):
             self.date = date

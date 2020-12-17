@@ -158,28 +158,32 @@ class Chart:
 
     # === Solar returns === #
 
-    def solarReturn(self, year):
+    def solarReturn(self, year, pos=0):
         """ Returns this chart's solar return for a
         given year.
 
         """
+        if pos == 0:
+            pos = self.pos
+
         sun = self.getObject(const.SUN)
-        date = Datetime('{0}-01-01'.format(year),
-                        '00:00',
-                        self.date.utcoffset)
+        date = Datetime(date='{0}-01-01'.format(year), time='00:00', pos=pos)
         srDate = ephem.nextSolarReturn(date, sun.lon)
-        return Chart(srDate, self.pos, hsys=self.hsys)
+        return Chart(srDate, pos, hsys=self.hsys)
 
 
     # === Progressions === #
 
-    def progressedChart(self, date):
+    def progressedChart(self, date, pos=0):
         """ Return the progressed chart for a
         given date.
 
         """
+        if pos == 0:
+            pos = self.pos
+
         day_length = 23.9344    # 23 hours 56 minutes 4 seconds
-        tz = self.date.getTz(self.pos)
+        tz = self.date.getTz(pos)
         progression_date = tz.localize(datetime.fromisoformat(date))
         chart_date = self.date.datetime
         start_date = tz.localize(chart_date)
@@ -187,7 +191,7 @@ class Chart:
 
         # the progression year is counted from birthday to birthday
         # this calculates how far along in the year the progression date is
-        if (last_date > progression_date):
+        if last_date > progression_date:
             next_date = last_date
             last_date -= relativedelta(years=1)
         else:
@@ -202,18 +206,23 @@ class Chart:
         days = relativedelta(progression_date, start_date).years
         hours = days_passed_ratio * day_length
         pcd = chart_date + relativedelta(days=days, hours=hours)
-        progressed_chart_date = Datetime([pcd.year, pcd.month, pcd.day], ['+', pcd.hour, pcd.minute, pcd.second], self.date.utcoffset)
-        return Chart(progressed_chart_date, self.pos, hsys=self.hsys)
+        progressed_chart_date = Datetime(date=[pcd.year, pcd.month, pcd.day], time=['+', pcd.hour, pcd.minute, pcd.second], pos=pos)
+        return Chart(progressed_chart_date, pos, hsys=self.hsys)
 
 
     # === Transits === #
 
-    def currentTransits(self):
-        """ Returns the current moment's chart.
+    def transits(self, date=0, pos=0):
+        """ Returns another chart based on new date.
 
         """
-        now = datetime.now()
-        date = now.strftime("%Y-%m-%d")
-        time = now.strftime("%H:%M:%S")
-        transit_date = Datetime(date, time, self.date.utcoffset)
-        return Chart(transit_date, self.pos, hsys=self.hsys)
+        if date == 0:
+            now = datetime.now()
+            transit_date = now.strftime("%Y-%m-%d")
+            transit_time = now.strftime("%H:%M:%S")
+            date = Datetime(date=transit_date, time=transit_time, pos=pos)
+
+        if pos == 0:
+            pos = self.pos
+
+        return Chart(date, pos, hsys=self.hsys)
