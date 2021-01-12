@@ -52,6 +52,7 @@ class Chart:
         self.date = date
         self.pos = pos
         self.hsys = hsys
+        self.IDs = IDs
         self.objects = ephem.getObjectList(IDs, date, pos)
         self.houses, self.angles = ephem.getHouses(date, pos, hsys)
 
@@ -169,7 +170,7 @@ class Chart:
         sun = self.getObject(const.SUN)
         date = Datetime(date='{0}-01-01'.format(year), time='00:00', pos=pos)
         srDate = ephem.nextSolarReturn(date, sun.lon)
-        return Chart(srDate, pos, hsys=self.hsys)
+        return Chart(srDate, pos, hsys=self.hsys, IDs=self.IDs)
 
 
     # === Progressions === #
@@ -207,7 +208,7 @@ class Chart:
         hours = days_passed_ratio * day_length
         pcd = chart_date + relativedelta(days=days, hours=hours)
         progressed_chart_date = Datetime(date=[pcd.year, pcd.month, pcd.day], time=['+', pcd.hour, pcd.minute, pcd.second], pos=pos)
-        return Chart(progressed_chart_date, pos, hsys=self.hsys)
+        return Chart(progressed_chart_date, pos, hsys=self.hsys, IDs=self.IDs)
 
 
     # === Transits === #
@@ -225,4 +226,4 @@ class Chart:
         if pos == 0:
             pos = self.pos
 
-        return Chart(date, pos, hsys=self.hsys)
+        return Chart(date, pos, hsys=self.hsys, IDs=self.IDs)
